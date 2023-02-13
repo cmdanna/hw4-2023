@@ -85,7 +85,7 @@ img{
 
     text-align:right}
 
-  }
+  
 
   nav li{
     margin-left: 5%;
@@ -122,6 +122,7 @@ img{
   img{
     overflow: hidden;
   }
+}
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
