@@ -6,8 +6,9 @@ a.skip{
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 1 code here -- Do not remove this comment. */
-  margin-left: -400px;
-  margin-top: -200px;
+  position: absolute;
+  left: -400px;
+  top: -200px;
 }
 
 
@@ -21,7 +22,6 @@ nav ul li a:focus{
   /* Requirement 3 code here -- Do not remove this comment. */
 .container{
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
 }
@@ -70,7 +70,8 @@ img{
 
   /* Requirement 9 code here -- Do not remove this comment. */
 
-#about,#clients,#method,#contact{
+.text{
+  align-self: center;
   max-height: 30vh;
   overflow:scroll;
 }
@@ -82,7 +83,7 @@ img{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
 
-    text-align:right
+    text-align:right}
 
   }
 
@@ -95,7 +96,8 @@ img{
   /* Requirement 11 code here -- Do not remove this comment. */
   .skip:focus{
     text-align: left;
-    margin: 20px 0px 0px 0px;
+    left: 0px;
+    top: 20px;
   }
 
 
@@ -117,13 +119,15 @@ img{
   }
 
   /* Requirement 15 code here -- Do not remove this comment. */
-}
+  img{
+    overflow: hidden;
+  }
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
    *************************************** 
    */
-   @media screen and (prefers-reduced-motion: reduce){
+  @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
     html{
       scroll-behavior: auto; /* Removes scroll animation */
